@@ -1,19 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <input type="text" id="input">
+    <button onclick="show()">Show</button>
 </body>
+
 </html>
 <script>
-    let string = "Javascript"
+    let string = `30`
+    console.log(string.concat(" ", "Days of Javascript"));
 
-    let randNum = Math.floor(Math.random() * string.length)
+    console.log("30" + " " + "Days of Javascript");
 
-    console.log(string[randNum]);
-    
+    console.log(10 + undefined);
+
+    let noProf = null
+
+    noProf = {
+        name: "Adedamola",
+        age: 20,
+        isMarried: false,
+    }
+
+    let strNum = Number("10")
+
+    console.log(10 + strNum);
+
+    function show() {
+        // let input = document.getElementById("input").value.trim()
+        // let first = +(input[0])
+        // let third = +(input[2])
+        // console.log(first + third);
+
+        // let a = 5
+        // let b = 2
+        // console.log(a ** b);
+
+        // console.log(3 !== "3");
+
+        // console.log(3 != 3);
+
+
+        // let oper = false && false
+
+        // let sec = true || false
+
+        // console.log(!true);
+
+
+        let count = 0
+        console.log(++count)        // 1
+        console.log(count)
+
+        let count2 = 0
+        console.log(count2++)        // 0
+        console.log(count2)
+
+
+        // let message = "Hello Everybody"
+
+        // alert(message)
+
+        // let number = prompt('Enter number', "+234 907 XXX XXXX")
+        // console.log(number)
+
+        const agree = confirm('Are you sure you like to delete? ')
+        console.log(agree)
+
+
+    }
+
+    let isRaining = true
+    isRaining ? console.log('You need a rain coat.') : console.log('No need for a rain coat.')
+
+
+    let comp = 4 > 3
+    comp ? console.log("hello") : console.log("No Hello");
+
+    let newStr = ''
+    newStr ? console.log("Mr Stud") : console.log("Mr Samuel");
+
+
+
+    let number = 5
+    number > 0 ? console.log(`${number} is a positive number`) : console.log(`${number} is a negative number`)
+
+    let cond = true
+    !cond ? console.log("Na lie") : console.log("Na true");
 </script>
