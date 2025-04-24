@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="myInput">
+    <button onclick="add()">Add Name</button>
+    <h2 id="showName"></h2>
+</body>
+
+</html>
+<script>
+    const newArr = Array(8).fill("Mr Joshua")
+    console.log(newArr);
+
+    const newestArr = []
+
+    let numArr = [1, 2, 3, 4, 5]
+    let strArr = ['a', 'b', 'c', 'd', 'e']
+    let boolArr = [true, false, true, false, true]
+    let mixArr = [1, "a", true, ["Mr Samuel", "Miss Mary"]]
+
+    console.log(numArr.length);
+
+    let classes = "Javascript"
+    console.log(classes.split(""));
+    console.log(classes[0]);
+    // classes[0] = "Y"
+    console.log(classes.replace("J", "Y"));
+    console.log(classes);
+    console.log(classes.includes("Java"));
+
+
+
+
+
+
+    let companiesString = 'Facebook,  Google,  Microsoft,  Apple,  IBM,  Oracle,  Amazon'
+    console.log(companiesString.split(',  '));
+
+    // const fruits = ['banana', 'orange', 'mango', 'lemon', 'apple', 'grape', 'kiwi']
+    // let lastIndexOfFruit = fruits[fruits.length - 1]
+
+    // if (fruits.length % 2 === 0) {
+    //     let evenMid = fruits.length / 2
+    //     let evenMid2 = evenMid - 1
+    //     console.log(fruits[evenMid], fruits[evenMid2]);
+    // } else {
+    //     let midIndexOfFruit = Math.floor(fruits.length / 2)
+    //     console.log(fruits[midIndexOfFruit]);
+    // }
+
+    // fruits[0] = 'Pear'
+    // console.log(fruits);
+
+    // fruits[3] = 'Pineapple'
+    // console.log(fruits);
+
+    // fruits[fruits.length - 1] = "Dates"
+
+    // console.log(fruits);
+
+    let a = [1, 2, 3]
+    let b = [4, 5, 6]
+    let c = a.concat(b)
+    console.log(c);
+
+    console.log(c.indexOf(5));
+
+    const fruits = ['banana', 'orange', 'mango', 'lemon', 'mango']
+    let index = fruits.indexOf('mango')
+    let lastIndices = fruits.lastIndexOf('mango')
+    console.log(index);
+    console.log(lastIndices);
+
+    console.log(fruits.includes('mango'));
+
+
+
+
+    if (index === -1) {
+        console.log('This fruit does not exist in the array')
+    } else {
+        console.log('This fruit does exist in the array')
+    }
+
+    let isMarried = true
+    if (isMarried) {
+        console.log("I am married");
+
+    }
+
+    // CORRECTION
+    const ages = [19, 22, 19, 24, 20, 25, 26, 25, 24, 23]
+    // Sort
+    sortedNum = ages.sort()
+    console.log(ages.sort());
+    minAge = sortedNum[0]
+    maxAge = sortedNum[sortedNum.length - 1]
+
+    // Median
+    if (sortedNum.length % 2 === 0) {
+        let midOneIndex = sortedNum.length / 2
+        let midTwoIndex = midOneIndex - 1
+        console.log((sortedNum[midOneIndex] + sortedNum[midTwoIndex]) / 2);
+    }
+    else {
+        let middle = Math.floor(sortedNum.length / 2)
+        console.log(sortedNum[middle])
+    }
+    // Average
+    let average = eval(sortedNum.join("+"))
+    let averageAge = average / sortedNum.length
+    console.log(average / sortedNum.length);
+
+    // Range
+    console.log(maxAge - minAge);
+
+    // Compare
+    minAve = Math.abs(minAge - averageAge)
+    console.log(minAve);
+    maxAve = Math.abs(maxAge - averageAge)
+    console.log(maxAve);
+
+    console.log(minAve === maxAve);
+
+    const numbers = [1, 2, 3, 4, 5]
+
+
+    console.log(numbers.slice());
+    console.log(numbers.slice(0));
+    console.log(numbers.slice(1));
+    console.log(numbers.slice(1, 4));
+    console.log(numbers.slice(1, numbers.length - 1));
+    console.log(numbers.slice(1, 3));
+    console.log(numbers.slice(0, 3));
+
+    numbers.push(6)
+    console.log(numbers);
+
+
+
+    // numbers.splice(0, 1)
+    // console.log(numbers);
+    // numbers.splice(1, 1)
+    // console.log(numbers);
+
+    let database = []
+    function add() {
+        let myInput = document.getElementById("myInput")
+        database.push(myInput.value)
+        console.log(database);
+        myInput.value = ""
+        let showName = document.getElementById("showName")
+        showName.innerHTML = database[1]
+    }
+
+
+    numberTwo = [1, 2, 3, 4, 5]
+    numberTwo.pop()
+    console.log(numberTwo);
+    numberTwo.pop()
+    console.log(numberTwo);
+
+    shiftNum = [1, 2, 3, 4, 5]
+    shiftNum.shift()
+    console.log(shiftNum);
+    shiftNum.unshift(1)
+    console.log(shiftNum);
+
+    scatteredArr = [2, 4, 1, 6, 9, 3]
+    scatteredArr.sort()
+    console.log(scatteredArr);
+    scatteredArr.reverse()
+    console.log(scatteredArr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
